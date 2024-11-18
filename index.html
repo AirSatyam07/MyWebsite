@@ -55,33 +55,60 @@
     <section class="Projects">
         <div class="Projects-Content">
             <h2>My Projects</h2>
-            <div class="project-list">
-                <div class="project-item">
-                    <h3>Project Title1</h3>
-                    <p>Project details</p>
-                    <a href="" target="_blank">View on GitHub</a>
-                </div>
-                <div class="project-item">
-                    <h3>Project Title2</h3>
-                    <p>Project details</p>
-                    <a href="" target="_blank">View on GitHub</a>
-                </div>
+            <div class="project-container">
+                <button class="scroll-button left" onclick="scrollProjects('left')">&#9664;</button>
+                <div class="project-list">
+                    <div class="project-item">
+                        <h3>Project Title1</h3>
+                        <p>Project details</p>
+                        <a href="" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project Title2</h3>
+                        <p>Project details</p>
+                        <a href="" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project Title2</h3>
+                        <p>Project details</p>
+                        <a href="" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project Title2</h3>
+                        <p>Project details</p>
+                        <a href="" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project Title2</h3>
+                        <p>Project details</p>
+                        <a href="" target="_blank">View on GitHub</a>
+                    </div>
+                    <div class="project-item">
+                        <h3>Project Title2</h3>
+                        <p>Project details</p>
+                        <a href="" target="_blank">View on GitHub</a>
+                    </div>
 
 
+                </div>
+                <button class="scroll-button right" onclick="scrollProjects('right')">&#9654;</button>
             </div>
         </div>
     </section>
 
     <section class="about">
-        <div class="about content">
-            <h2>About Me</h2>
+        <div class="about-content">
+            <h2 id="about-heading">About Me</h2>
             <p>
-                I am a passionate FullStack Developer with expertise in designing and building dynamic, user-friendly
+                I am a passionate FullStack Developer <br>with expertise in designing and building dynamic,<br>
+                user-friendly
                 web
-                applications. I have a background in Electrical Engineering and a keen interest in software development.
+                applications. <br>I have a background in Electrical Engineering and a keen interest in software
+                development.
             </p>
             <p>
-                With experience in Java, Python, and front-end technologies, I strive to create impactful solutions that
+                With experience in Java, Python, and front-end technologies, <br>I strive to create impactful solutions
+                that
                 improve user experience and functionality.
             </p>
 
@@ -89,22 +116,49 @@
     </section>
     <section class="skills">
         <div class="skills-content">
-            <h2>My Skills</h2>
-            <ul class="skills-list">
-                <li><strong>Languages:</strong> Java, Python, JavaScript</li>
-                <li><strong>Frameworks:</strong> React, Node.js, Spring Boot</li>
-                <li><strong>Tools:</strong> Git, Docker, Jupyter Notebook</li>
-                <li><strong>Database:</strong> MySQL, MongoDB</li>
-                <li><strong>Other:</strong> REST API Development, CI/CD Pipelines</li>
-            </ul>
-
+            <h2 id="skills-heading">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class='bx bxl-java'></i>
+                    <p>Java</p>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bxl-python'></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bxl-javascript'></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bxl-html5'></i>
+                    <p>HTML</p>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bxl-css3'></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bxl-git'></i>
+                    <p>Git</p>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bxl-github'></i>
+                    <p>GitHub</p>
+                </div>
+                <div class="skill-item">
+                    <i class='bx bxl-visual-studio'></i>
+                    <p>Visual Studio</p>
+                </div>
+            </div>
         </div>
     </section>
+
     <section class="contact">
         <div class="contact-content">
-            <h2>Contact Me</h2>
-            <p>If you'd like to discuss a project or just say hi, feel free to reach out!</p>
-            <form action="mailto:satyamvisa3005@gmail.com" method="POST" enctype="text/plain">
+            <h2 id="contact-heading">Contact Me</h2>
+            <p id="contact-desc">If you'd like to discuss a project or just say hi, feel free to reach out!</p>
+            <form action="mailto:satyamvisa3005@gmail.com" method="POST" enctype="text/plain" class="form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>

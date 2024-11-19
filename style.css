@@ -63,7 +63,7 @@ body{
 .home{
     position: relative;
     width: 95%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -118,6 +118,11 @@ body{
     animation: zoomIn 1s ease forwards;
     animation-delay: 1s;
     border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.home-img img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
 .social-media a{
@@ -163,9 +168,16 @@ body{
 
 
 .Projects{
-    
+    height: 100vh;
     width: 100%;
     padding: 20px;
+    padding: 20px;
+    background: #F4F6FF;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
 }
 
 .Projects-Content{
@@ -235,7 +247,7 @@ body{
 }
 
 .project-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-15px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -251,7 +263,8 @@ body{
 }
 
 .project-item a {
-    min-width: 20px;
+    max-width: max-content;
+
     text-decoration: none;
     color: #007acc;
     font-weight: bold;
@@ -297,28 +310,14 @@ body{
 
 .about{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    font-size: large;
-    text-align:center;
-    margin: 80px;
     height: 100vh;
-}
-
-
-
-.about-content{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+    color: #10375C;
     padding: 20px;
-    text-align: center; 
-    font-size: 22px;
-    line-height: 1.6;
-    font-weight: bold;
-    
-    
+    background: #F4F6FF;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
 }
 
 #about-heading{
@@ -329,11 +328,78 @@ body{
     margin-bottom: 10px;
 
 }
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 80vh;
+    width:140ch;
+    background: linear-gradient(120deg, #F3C623, #EB8317);
+    background-size: 300% 300%;
+    animation: backgroundAnimation 6s infinite ease-in-out;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.about-wrapper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+.about-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid #10375C;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px;
+    
+}
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.about-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.about-text {
+    width: 1000px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    
+
+}
+
 
 .skills{
     display:flex;
     justify-content:center;
     height: 100vh;
+    padding: 20px;
+    background: #F4F6FF;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
     
 
 }
@@ -376,14 +442,61 @@ body{
 }
 
 .skill-item:hover {
-    transform: scale(1.1);
+    transform: scale(1.4);
     color: #005ea2;
+}
+.education {
+    padding: 20px;
+    height: 100vh;
+    
+    background: #F4F6FF;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    
+}
+
+#education-heading {
+    text-align: center;
+    color: #10375C;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.education-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.education-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #F3C623;
+}
+
+.education-item h3 {
+    color: #EB8317;
+    margin-bottom: 10px;
+}
+
+.education-item p {
+    margin: 5px 0;
+    color: #10375C;
 }
 
 
 .contact{
     display: flex;
     justify-content: center;
+    padding: 20px;
+    background: #F4F6FF;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    align-items: center;
 }
 #contact-heading{
     padding: 10px;
